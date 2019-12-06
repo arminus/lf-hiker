@@ -50,6 +50,10 @@ Class Lfh_Controller_Front
         if( $cdn ){
             wp_register_style('leaflet_stylesheet', "https://cdnjs.cloudflare.com/ajax/libs/leaflet/" . Lf_Hiker_Plugin::LEAFLET_VERSION . '/leaflet.css', Array(), null, false);
             wp_register_script('leaflet',"https://cdnjs.cloudflare.com/ajax/libs/leaflet/" . Lf_Hiker_Plugin::LEAFLET_VERSION . "/leaflet.js",Array(),null, true);
+
+            wp_register_style('full_screen_leaflet_styles', 'https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css', Array(), null, false);
+            wp_register_script('full_screen_leaflet', 'https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js', Array(), null, true);
+            
      //   wp_register_style('font_awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", Array(), null, false);
         }else{
             wp_register_style('leaflet_stylesheet', Lf_Hiker_Plugin::$url.'lib/leaflet/'.Lf_Hiker_Plugin::LEAFLET_VERSION.'/leaflet.css', Array(), null, false);
@@ -257,7 +261,9 @@ Class Lfh_Controller_Front
         //need load css and script for map
         wp_enqueue_style('leaflet_stylesheet');
         wp_enqueue_style('font_awesome');
+        wp_enqueue_style('full_screen_leaflet_styles');
         wp_enqueue_script('leaflet');
+        wp_enqueue_script('full_screen_leaflet');
         wp_enqueue_style('lfh_style');
         self::add_css_inline($css);
         

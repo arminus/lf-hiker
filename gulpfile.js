@@ -75,7 +75,7 @@ gulp.task('new', /* ['rename'] ,*/ function(){
 	
 	}
 });
-gulp.task('versioning', ['lessify'], function(){
+gulp.task('versioning', gulp.series('lessify', function(){
 	
 	//front my editing css
 	gulp.src(['css/lfh-style.css'])
@@ -116,4 +116,4 @@ gulp.task('versioning', ['lessify'], function(){
 	//copy images
 	
 
-});
+}));

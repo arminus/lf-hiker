@@ -52,3 +52,5 @@ doc
 /node_modules
 /js/tile_doc.txt
 /js/tinymce-lfh-hiker.js
+/dist
+/package-lock.json

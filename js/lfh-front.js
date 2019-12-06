@@ -82,7 +82,7 @@ String.prototype.replaceAll = function (search, replacement) {
     // height of window under the map (without the title)
     lfh.HEIGHT = 170;
     // width of part of description under the map (without margin)
-    lfh.WIDTH = 280;
+    lfh.WIDTH = 580;
     /** Build all on the differents maps*/
     lfh.initialize_map = function (i) {
         if (typeof lfh.data[i] != 'function') {
@@ -986,7 +986,7 @@ String.prototype.replaceAll = function (search, replacement) {
             var _has_elevation = false;
         }
         function _x(km) {
-            return km * 220 / (_max_km * _coeff);
+            return km * 320 / (_max_km * _coeff);
         }
         function _h(h) {
             return (200 - (h / _coeff_elevation - _min_h) * 40 / _step_h);
@@ -1013,7 +1013,7 @@ String.prototype.replaceAll = function (search, replacement) {
                 // move the vertical line and write the value
                 for (var i = 1; i < 4; i++) {
                     var node = _track.querySelector('.v' + i);
-                    var tr_x = Math.round(i * _step_x * 220 / _max_km);
+                    var tr_x = Math.round(i * _step_x * 320 / _max_km);
                     node.setAttribute('transform', 'translate(' + tr_x + ', 0)');
                     node.querySelector('text').textContent = i * _step_x;
                 }
@@ -1036,7 +1036,7 @@ String.prototype.replaceAll = function (search, replacement) {
                 // No data elevation : remove svg
                 _track.querySelector('svg').parentNode.removeChild(_track.querySelector('svg'));
             }
-            _track.querySelector('.lfh-gpx-name').textContent = _gpx.get_name();
+//            _track.querySelector('.lfh-gpx-name').textContent = _gpx.get_name();
             _track.querySelector('.lfh-gpx-distance').textContent = (Math.round(_gpx.get_distance() / (100 * _coeff)) / 10).toString().replace('.', ',') + ' ' + lfh.DISTANCE_UNIT[_unit].code;
         }
         function _on_move(e) {
@@ -1049,11 +1049,11 @@ String.prototype.replaceAll = function (search, replacement) {
             if (x < 0) {
                 x = 0;
             }
-            if (x > 220) {
-                x = 220;
+            if (x > 320) {
+                x = 320;
             }
             _track.querySelector('.lfh-move-line').setAttribute('transform', 'translate(' + x + ',0)');
-            var km = x * _max_km / 220;
+            var km = x * _max_km / 320;
             var position = _find_position(km);
             _move_marker.setLatLng(_coords[position]);
         }

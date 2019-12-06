@@ -487,7 +487,6 @@ div.lfh-fadable,
   position: absolute;
   max-height: 800px;
   text-align: left;
-  border-right: 2px grey groove;
   top: 50px;
   right: 0px;
   width: 300px;
@@ -553,7 +552,7 @@ input.lfh-button + input[type="button"] {
   margin: 0px 7px 3px 0;
   padding: 3px 12px;
   height: auto;
-  width: 265px;
+  width: 365px;
   line-height: 1.43;
   white-space: normal;
   text-align: center;
@@ -858,101 +857,101 @@ div.lfh-min div.lfh-element.step1,
 div.lfh-min div.lfh-list.lfh-hidden.step1,
 div.undermap div.lfh-element.step1,
 div.undermap div.lfh-list.lfh-hidden.step1 {
-  -ms-transform: translateX(-280px);
-  -webkit-transform: translateX(-280px);
-  -moz-transform: translateX(-280px);
-  -o-transform: translateX(-280px);
-  transform: translateX(-280px);
+  -ms-transform: translateX(-380px);
+  -webkit-transform: translateX(-380px);
+  -moz-transform: translateX(-380px);
+  -o-transform: translateX(-380px);
+  transform: translateX(-380px);
 }
 div.lfh-min div.lfh-element.step2,
 div.lfh-min div.lfh-list.lfh-hidden.step2,
 div.undermap div.lfh-element.step2,
 div.undermap div.lfh-list.lfh-hidden.step2 {
-  -ms-transform: translateX(-560px);
-  -webkit-transform: translateX(-560px);
-  -moz-transform: translateX(-560px);
-  -o-transform: translateX(-560px);
-  transform: translateX(-560px);
+  -ms-transform: translateX(-760px);
+  -webkit-transform: translateX(-760px);
+  -moz-transform: translateX(-760px);
+  -o-transform: translateX(-760px);
+  transform: translateX(-760px);
 }
 div.lfh-min div.lfh-element.step3,
 div.lfh-min div.lfh-list.lfh-hidden.step3,
 div.undermap div.lfh-element.step3,
 div.undermap div.lfh-list.lfh-hidden.step3 {
-  -ms-transform: translateX(-840px);
-  -webkit-transform: translateX(-840px);
-  -moz-transform: translateX(-840px);
-  -o-transform: translateX(-840px);
-  transform: translateX(-840px);
+  -ms-transform: translateX(-1140px);
+  -webkit-transform: translateX(-1140px);
+  -moz-transform: translateX(-1140px);
+  -o-transform: translateX(-1140px);
+  transform: translateX(-1140px);
 }
 div.lfh-min div.lfh-element.step4,
 div.lfh-min div.lfh-list.lfh-hidden.step4,
 div.undermap div.lfh-element.step4,
 div.undermap div.lfh-list.lfh-hidden.step4 {
-  -ms-transform: translateX(-1120px);
-  -webkit-transform: translateX(-1120px);
-  -moz-transform: translateX(-1120px);
-  -o-transform: translateX(-1120px);
-  transform: translateX(-1120px);
+  -ms-transform: translateX(-1520px);
+  -webkit-transform: translateX(-1520px);
+  -moz-transform: translateX(-1520px);
+  -o-transform: translateX(-1520px);
+  transform: translateX(-1520px);
 }
 div.lfh-min div.lfh-element.step5,
 div.lfh-min div.lfh-list.lfh-hidden.step5,
 div.undermap div.lfh-element.step5,
 div.undermap div.lfh-list.lfh-hidden.step5 {
-  -ms-transform: translateX(-1400px);
-  -webkit-transform: translateX(-1400px);
-  -moz-transform: translateX(-1400px);
-  -o-transform: translateX(-1400px);
-  transform: translateX(-1400px);
+  -ms-transform: translateX(-1900px);
+  -webkit-transform: translateX(-1900px);
+  -moz-transform: translateX(-1900px);
+  -o-transform: translateX(-1900px);
+  transform: translateX(-1900px);
 }
 div.lfh-min div.lfh-element.step6,
 div.lfh-min div.lfh-list.lfh-hidden.step6,
 div.undermap div.lfh-element.step6,
 div.undermap div.lfh-list.lfh-hidden.step6 {
-  -ms-transform: translateX(-1680px);
-  -webkit-transform: translateX(-1680px);
-  -moz-transform: translateX(-1680px);
-  -o-transform: translateX(-1680px);
-  transform: translateX(-1680px);
+  -ms-transform: translateX(-2280px);
+  -webkit-transform: translateX(-2280px);
+  -moz-transform: translateX(-2280px);
+  -o-transform: translateX(-2280px);
+  transform: translateX(-2280px);
 }
 div.lfh-min div.lfh-element.step7,
 div.lfh-min div.lfh-list.lfh-hidden.step7,
 div.undermap div.lfh-element.step7,
 div.undermap div.lfh-list.lfh-hidden.step7 {
-  -ms-transform: translateX(-1960px);
-  -webkit-transform: translateX(-1960px);
-  -moz-transform: translateX(-1960px);
-  -o-transform: translateX(-1960px);
-  transform: translateX(-1960px);
+  -ms-transform: translateX(-2660px);
+  -webkit-transform: translateX(-2660px);
+  -moz-transform: translateX(-2660px);
+  -o-transform: translateX(-2660px);
+  transform: translateX(-2660px);
 }
 div.lfh-min div.lfh-element.step8,
 div.lfh-min div.lfh-list.lfh-hidden.step8,
 div.undermap div.lfh-element.step8,
 div.undermap div.lfh-list.lfh-hidden.step8 {
-  -ms-transform: translateX(-2240px);
-  -webkit-transform: translateX(-2240px);
-  -moz-transform: translateX(-2240px);
-  -o-transform: translateX(-2240px);
-  transform: translateX(-2240px);
+  -ms-transform: translateX(-3040px);
+  -webkit-transform: translateX(-3040px);
+  -moz-transform: translateX(-3040px);
+  -o-transform: translateX(-3040px);
+  transform: translateX(-3040px);
 }
 div.lfh-min div.lfh-element.step9,
 div.lfh-min div.lfh-list.lfh-hidden.step9,
 div.undermap div.lfh-element.step9,
 div.undermap div.lfh-list.lfh-hidden.step9 {
-  -ms-transform: translateX(-2520px);
-  -webkit-transform: translateX(-2520px);
-  -moz-transform: translateX(-2520px);
-  -o-transform: translateX(-2520px);
-  transform: translateX(-2520px);
+  -ms-transform: translateX(-3420px);
+  -webkit-transform: translateX(-3420px);
+  -moz-transform: translateX(-3420px);
+  -o-transform: translateX(-3420px);
+  transform: translateX(-3420px);
 }
 div.lfh-min div.lfh-element.step10,
 div.lfh-min div.lfh-list.lfh-hidden.step10,
 div.undermap div.lfh-element.step10,
 div.undermap div.lfh-list.lfh-hidden.step10 {
-  -ms-transform: translateX(-2800px);
-  -webkit-transform: translateX(-2800px);
-  -moz-transform: translateX(-2800px);
-  -o-transform: translateX(-2800px);
-  transform: translateX(-2800px);
+  -ms-transform: translateX(-3800px);
+  -webkit-transform: translateX(-3800px);
+  -moz-transform: translateX(-3800px);
+  -o-transform: translateX(-3800px);
+  transform: translateX(-3800px);
 }
 div.lfh-min div.lfh-element.lfh-hidden:not(.lfh-list),
 div.lfh-min div.lfh-element.lfh-hidden.step0:not(.lfh-list),
@@ -966,83 +965,83 @@ div.undermap div.lfh-element.lfh-hidden.step0:not(.lfh-list) {
 }
 div.lfh-min div.lfh-element.lfh-hidden.step1:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step1:not(.lfh-list) {
-  -ms-transform: translate(-280px, 250px);
-  -webkit-transform: translate(-280px, 250px);
-  -moz-transform: translate(-280px, 250px);
-  -o-transform: translate(-280px, 250px);
-  transform: translate(-280px, 250px);
+  -ms-transform: translate(-380px, 250px);
+  -webkit-transform: translate(-380px, 250px);
+  -moz-transform: translate(-380px, 250px);
+  -o-transform: translate(-380px, 250px);
+  transform: translate(-380px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step2:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step2:not(.lfh-list) {
-  -ms-transform: translate(-560px, 250px);
-  -webkit-transform: translate(-560px, 250px);
-  -moz-transform: translate(-560px, 250px);
-  -o-transform: translate(-560px, 250px);
-  transform: translate(-560px, 250px);
+  -ms-transform: translate(-760px, 250px);
+  -webkit-transform: translate(-760px, 250px);
+  -moz-transform: translate(-760px, 250px);
+  -o-transform: translate(-760px, 250px);
+  transform: translate(-760px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step3:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step3:not(.lfh-list) {
-  -ms-transform: translate(-840px, 250px);
-  -webkit-transform: translate(-840px, 250px);
-  -moz-transform: translate(-840px, 250px);
-  -o-transform: translate(-840px, 250px);
-  transform: translate(-840px, 250px);
+  -ms-transform: translate(-1140px, 250px);
+  -webkit-transform: translate(-1140px, 250px);
+  -moz-transform: translate(-1140px, 250px);
+  -o-transform: translate(-1140px, 250px);
+  transform: translate(-1140px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step4:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step4:not(.lfh-list) {
-  -ms-transform: translate(-1120px, 250px);
-  -webkit-transform: translate(-1120px, 250px);
-  -moz-transform: translate(-1120px, 250px);
-  -o-transform: translate(-1120px, 250px);
-  transform: translate(-1120px, 250px);
+  -ms-transform: translate(-1520px, 250px);
+  -webkit-transform: translate(-1520px, 250px);
+  -moz-transform: translate(-1520px, 250px);
+  -o-transform: translate(-1520px, 250px);
+  transform: translate(-1520px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step5:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step5:not(.lfh-list) {
-  -ms-transform: translate(-1400px, 250px);
-  -webkit-transform: translate(-1400px, 250px);
-  -moz-transform: translate(-1400px, 250px);
-  -o-transform: translate(-1400px, 250px);
-  transform: translate(-1400px, 250px);
+  -ms-transform: translate(-1900px, 250px);
+  -webkit-transform: translate(-1900px, 250px);
+  -moz-transform: translate(-1900px, 250px);
+  -o-transform: translate(-1900px, 250px);
+  transform: translate(-1900px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step6:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step6:not(.lfh-list) {
-  -ms-transform: translate(-1680px, 250px);
-  -webkit-transform: translate(-1680px, 250px);
-  -moz-transform: translate(-1680px, 250px);
-  -o-transform: translate(-1680px, 250px);
-  transform: translate(-1680px, 250px);
+  -ms-transform: translate(-2280px, 250px);
+  -webkit-transform: translate(-2280px, 250px);
+  -moz-transform: translate(-2280px, 250px);
+  -o-transform: translate(-2280px, 250px);
+  transform: translate(-2280px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step7:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step7:not(.lfh-list) {
-  -ms-transform: translate(-1960px, 250px);
-  -webkit-transform: translate(-1960px, 250px);
-  -moz-transform: translate(-1960px, 250px);
-  -o-transform: translate(-1960px, 250px);
-  transform: translate(-1960px, 250px);
+  -ms-transform: translate(-2660px, 250px);
+  -webkit-transform: translate(-2660px, 250px);
+  -moz-transform: translate(-2660px, 250px);
+  -o-transform: translate(-2660px, 250px);
+  transform: translate(-2660px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step8:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step8:not(.lfh-list) {
-  -ms-transform: translate(-2240px, 250px);
-  -webkit-transform: translate(-2240px, 250px);
-  -moz-transform: translate(-2240px, 250px);
-  -o-transform: translate(-2240px, 250px);
-  transform: translate(-2240px, 250px);
+  -ms-transform: translate(-3040px, 250px);
+  -webkit-transform: translate(-3040px, 250px);
+  -moz-transform: translate(-3040px, 250px);
+  -o-transform: translate(-3040px, 250px);
+  transform: translate(-3040px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step9:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step9:not(.lfh-list) {
-  -ms-transform: translate(-2520px, 250px);
-  -webkit-transform: translate(-2520px, 250px);
-  -moz-transform: translate(-2520px, 250px);
-  -o-transform: translate(-2520px, 250px);
-  transform: translate(-2520px, 250px);
+  -ms-transform: translate(-3420px, 250px);
+  -webkit-transform: translate(-3420px, 250px);
+  -moz-transform: translate(-3420px, 250px);
+  -o-transform: translate(-3420px, 250px);
+  transform: translate(-3420px, 250px);
 }
 div.lfh-min div.lfh-element.lfh-hidden.step10:not(.lfh-list),
 div.undermap div.lfh-element.lfh-hidden.step10:not(.lfh-list) {
-  -ms-transform: translate(-2800px, 250px);
-  -webkit-transform: translate(-2800px, 250px);
-  -moz-transform: translate(-2800px, 250px);
-  -o-transform: translate(-2800px, 250px);
-  transform: translate(-2800px, 250px);
+  -ms-transform: translate(-3800px, 250px);
+  -webkit-transform: translate(-3800px, 250px);
+  -moz-transform: translate(-3800px, 250px);
+  -o-transform: translate(-3800px, 250px);
+  transform: translate(-3800px, 250px);
 }
 div.lfh-min div.lfh-section,
 div.undermap div.lfh-section {
@@ -1057,8 +1056,8 @@ div.lfh-section div.lfh-content > div {
 }
 div.lfh-min .lfh-content > div,
 div.undermap .lfh-content > div {
-  max-width: 280px;
-  width: 280px;
+  max-width: 380px;
+  width: 380px;
   float: left;
   /*  height:@height - @height_title - 2*@padding_title;*/
   max-height: 167px;
@@ -1081,7 +1080,7 @@ div.undermap .lfh-element svg {
   min-height: 160px;
   height: 160px;
   max-height: 160px;
-  max-width: 270px;
+  max-width: 370px;
 }
 div.lfh-min div.lfh-file,
 div.lfh-min div.lfh-position,
@@ -1113,23 +1112,23 @@ div.undermap div.lfh-content ~ div {
 }
 div.lfh-min div.lfh-content ~ div,
 div.undermap div.lfh-content ~ div {
-  max-width: 280px;
+  max-width: 380px;
 }
 div.lfh-min div.lfh-content > div,
 div.undermap div.lfh-content > div {
-  width: 280px;
+  width: 380px;
   /* height: @height - @height_title - 2*@padding_title;*/
-  max-width: 280px;
+  max-width: 380px;
   max-height: 167px;
 }
 div.lfh-min div.lfh-content div.wp-caption,
 div.undermap div.lfh-content div.wp-caption {
-  max-width: 280px;
+  max-width: 380px;
   max-height: 167px;
 }
 div.lfh-min div.lfh-content img,
 div.undermap div.lfh-content img {
-  max-width: 270px;
+  max-width: 370px;
   max-height: 167px;
 }
 div.lfh-min .lfh-element-content,
