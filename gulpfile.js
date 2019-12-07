@@ -114,6 +114,7 @@ gulp.task('versioning', gulp.series('lessify', function(){
 	gulp.src('lib/awesome-marker/images/*')
 	.pipe(gulp.dest('css/images'));
 	//copy images
-	
+
+    return Promise.resolve('versioning done');	
 
 }));
