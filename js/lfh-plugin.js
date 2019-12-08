@@ -70,6 +70,7 @@ String.prototype.replaceAll = function(search, replacement) {
 //console.log( 'step_round =' +result);
 /**
  * @const lfh.ZOOM_LIMIT the zoom limit for which some markers are displayed
+ * @const lfh.MIN_NOSTEP min window width to hide step button
  * @const lfh.ICON_MOVE {L.Icon} icon for marker moving on path
  * @const lfh.POINT_ICON {L.Icon} icon for start and end points of path
  * @const lfh.SELECTED_COLOR string html color for the selected path 
@@ -77,6 +78,8 @@ String.prototype.replaceAll = function(search, replacement) {
  * @const lfh.NUMBER_GPX_FOR_CHECK max of gpx for adding checkbox hide/show
  **/
 lfh.ZOOM_LIMIT = 11;
+
+lfh.MIN_NOSTEP = 1290;
 
 lfh.ICON_MOVE = L.icon({
         iconUrl: lfh.ICON_URL +'markers/move.png',
@@ -509,6 +512,7 @@ window.addEventListener("load", function(e) {
         })
     })
 }, true);
+var showSteps = false;
 lfh.toggle_next = function( node, delta, map_id){
     if( !node ){
         return;
@@ -519,14 +523,23 @@ lfh.toggle_next = function( node, delta, map_id){
     node.step = next;
     node.className = node.className.replace("step"+ i, "step" + next);
 
-    if( node.step_max <= node.step+2 && window.innerWidth > 1277 ){
+    showSteps = ( node.step_max <= node.step+2 );
+    lfh.toggleStepBtn();
+}
+lfh.toggleStepBtn = function(){
+    if( showSteps && window.innerWidth > lfh.MIN_NOSTEP ){
         // hide next button
-        document.querySelector('#'+ map_id + "-nav .lfh-next").style.display = "none";
+//        document.querySelector('#'+ map_id + "-nav .lfh-next").style.display = "none";
+        document.querySelector(".lfh-next").style.display = "none";
     }else{
         // show next button
-        document.querySelector('#'+ map_id + "-nav .lfh-next").style.display = "block";
+//        document.querySelector('#'+ map_id + "-nav .lfh-next").style.display = "block";
+        document.querySelector(".lfh-next").style.display = "block";
     }
 }
+window.onresize = function(event) {
+    lfh.toggleStepBtn();    
+};
 
 /** the layer selected, whose description is displayed
  * @constructor
