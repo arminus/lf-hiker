@@ -836,33 +836,37 @@ lfh.Map = function(i){
         
         function _add_gpx_to_node( gpx, container, length )
         {
-            var div = document.createElement("div");
-           div.className = "lfh-button lfhicon";
-       
-            var node = document.createElement("span");
-            if( length > lfh.NUMBER_GPX_FOR_CHECK){
-                node.className = "lfh-short-button"
-            }
-            node.textContent = "\ue80e  " + document.querySelector('#'+gpx.options.elem_id + ' span.lfh-trackname').textContent;
-            div.appendChild( node );
-            if( length > lfh.NUMBER_GPX_FOR_CHECK ){
-                
-                var checkbox = document.createElement("input");
-                checkbox.setAttribute("type", "checkbox");
-                checkbox.checked = true;
-                L.DomEvent.addListener( checkbox, 'change', function(e){
-                    var markers = gpx.get_markers();
-                    if( this.checked){
-                        gpx.addTo(map);
-                    }else{
-                        map.removeLayer(gpx);
-                    }
-                    e.stopPropagation();
-                })
-                div.appendChild( checkbox);
-               
-            }
-            container.appendChild( div);
+            var node = document.createElement("li");
+            node.textContent = document.querySelector('#'+gpx.options.elem_id + ' span.lfh-trackname').textContent;
+            node.className = "lfh-track";
+            container.appendChild(node);
+//            var div = document.createElement("div");
+//            div.className = "lfh-button lfhicon";
+//       
+//            var node = document.createElement("span");
+//            if( length > lfh.NUMBER_GPX_FOR_CHECK){
+//                node.className = "lfh-short-button"
+//            }
+//            node.textContent = "\ue80e  " + document.querySelector('#'+gpx.options.elem_id + ' span.lfh-trackname').textContent;
+//            div.appendChild( node );
+//            if( length > lfh.NUMBER_GPX_FOR_CHECK ){
+//                
+//                var checkbox = document.createElement("input");
+//                checkbox.setAttribute("type", "checkbox");
+//                checkbox.checked = true;
+//                L.DomEvent.addListener( checkbox, 'change', function(e){
+//                    var markers = gpx.get_markers();
+//                    if( this.checked){
+//                        gpx.addTo(map);
+//                    }else{
+//                        map.removeLayer(gpx);
+//                    }
+//                    e.stopPropagation();
+//                })
+//                div.appendChild( checkbox);
+//               
+//            }
+//            container.appendChild( div);
             
             L.DomEvent.addListener( node , 'click', function(e){
                 gpx.fire('click');
@@ -947,22 +951,24 @@ lfh.Map = function(i){
             var count_div = 0;
             var list = document.querySelector('#lfh-list-' + _index );
             var nav = list.querySelector('div.lfh-description');
-            var div = null;
+            var ul = document.createElement("ul");
+            ul.className = "lfh-tracklist";
            /* var div = document.createElement("div");
             nav.appendChild(div);
             count_div++;
             div.className = "lfh-content";*/
             //begin by gpx
             _gpx.forEach(function( one_gpx, i){
-                if( count%3 == 0){
-                    div = document.createElement("div");
-                    div.className = "lfh-content";
-                    nav.appendChild(div);
-                    count_div++;
-                }
-                _add_gpx_to_node( one_gpx, div, _gpx.length );
+//                if( count%3 == 0){
+//                    div = document.createElement("div");
+//                    div.className = "lfh-content";
+//                    nav.appendChild(div);
+//                    count_div++;
+//                }
+                _add_gpx_to_node( one_gpx, ul, _gpx.length );
                 count++;
             });
+            nav.appendChild(ul);
           
             [].forEach.call(_markers, function( marker){
                 if( count%3 == 0){
@@ -981,7 +987,7 @@ lfh.Map = function(i){
             if(list.step_max == 1){
                 list.className = list.className + " lfh-small-content";
             }
-            lfh.toggle_next( list, 0,_map_id);
+//            lfh.toggle_next( list, 0,_map_id);
             if( _gpx.length > 0 && _OPEN_PROFILE){
                 _gpx[1].fire('click');
                 document.querySelectorAll(".lfh-close").forEach(function(e) {

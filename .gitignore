@@ -54,3 +54,4 @@ doc
 /js/tinymce-lfh-hiker.js
 /dist
 /package-lock.json
+/deploy.bat
